@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+void drawTriangle(int height)
+{
+    for (int i = 0; i < height; ++i)
+    {
+        for (int j = 0; j <= i; ++j)
+        {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+}
+
+int main() 
+{
+    setlocale(LC_ALL, "ru");
+    int n;
+    cout << "Задайте высоту треугольника: ";
+    cin >> n;
+
+    drawTriangle(n);
+}
